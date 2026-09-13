@@ -31,11 +31,3 @@
 .footer-text {
   max-width: 264px;
 }
-.footer-container {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-info {
-  margin-right: 120px;
-}
