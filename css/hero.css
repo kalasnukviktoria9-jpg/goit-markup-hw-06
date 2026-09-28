@@ -1,11 +1,40 @@
 .hero-section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.hero-section {
+  background-image: image-set(
+    url('../images/hero-bg-mobile.jpg') 1x,
+    url('../images/hero-bg-mobile@2x.jpg') 2x
+  );
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: image-set(
+      url('../images/hero-bg-desktop.jpg') 1x,
+      url('../images/hero-bg-desktop@2x.jpg') 2x
+    );
+  }
+}
+.hero-section {
   background-color: #2e2f42;
   padding: 72px 0;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     image-set(
       url('../images/hero-mobile.jpg') 1x,
-      url('../images/hero-mobile@2x.jpg') 2x ;
+      url('../images/hero-mobile@2x.jpg') 2x
     );
   background-repeat: no-repeat;
   background-position: center;
@@ -20,7 +49,7 @@
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
         url('../images/hero-mobile.jpg') 1x,
-        url('../images/hero-mobile@2x.jpg') 2x ;
+        url('../images/hero-mobile@2x.jpg') 2x
       );
   }
 }
@@ -58,7 +87,7 @@
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
         url('../images/hero-mobile.jpg') 1x,
-        url('../images/hero-mobile@2x.jpg') 2x ;
+        url('../images/hero-mobile@2x.jpg') 2x
       );
   }
 
@@ -68,7 +97,7 @@
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         image-set(
           url('../images/hero-mobile.jpg') 1x,
-          url('../images/hero-mobile@2x.jpg') 2x ;
+          url('../images/hero-mobile@2x.jpg') 2x
         );
     }
   }
@@ -89,7 +118,7 @@
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       image-set(
         url('../images/hero-mobile.jpg') 1x,
-        url('../images/hero-mobile@2x.jpg') 2x ;
+        url('../images/hero-mobile@2x.jpg') 2x
       );
   }
 
@@ -99,7 +128,7 @@
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         image-set(
           url('../images/hero-mobile.jpg') 1x,
-          url('../images/hero-mobile@2x.jpg') 2x ;
+          url('../images/hero-mobile@2x.jpg') 2x
         );
     }
   }

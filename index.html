@@ -27,14 +27,19 @@
           <span class="logo-web">WEB</span>STUDIO
         </a>
         <nav class="header-nav">
-          <ul class="nav-list">
+          <ul class="site-nav nav-list">
             <li><a href="./index.html" class="nav-link active">Features</a></li>
             <li><a href="" class="nav-link">Team</a></li>
             <li><a href="" class="nav-link">Portfolio</a></li>
           </ul>
         </nav>
+        <button class="menu-open-btn" type="button" aria-label="Open menu">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <address class="header-address">
-          <ul class="address-list">
+          <ul class="header-address-list address-list">
             <li>
               <a href="mailto:info@devstudio.com" class="address-link"
                 >info@devstudio.com</a
@@ -52,7 +57,7 @@
 
     <main>
       <!-- HERO -->
-      <section id="hero" class="hero">
+      <section id="hero" class="hero hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn">Order Service</button>
@@ -60,12 +65,12 @@
       </section>
 
       <!-- FEATURES -->
-      <section id="features" class="features">
+      <section id="features" class="section features-section">
         <div class="container">
-          <h2 class="sr-only">Our Features</h2>
+          <h2 class="visually-hidden">Our Features</h2>
           <ul class="features-list">
             <li class="features-item">
-              <div class="features-icon-container">
+              <div class="features-icon-wrapper">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#antena"></use>
                 </svg>
@@ -122,7 +127,12 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="card-content">
                 <h3 class="team-member">Mark Guerrero</h3>
                 <p class="team-role">Product Designer</p>
@@ -159,7 +169,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="card-content">
                 <h3 class="team-member">Tom Ford</h3>
                 <p class="team-role">Frontend Developer</p>
@@ -196,7 +211,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="card-content">
                 <h3 class="team-member">Camila Garcia</h3>
                 <p class="team-role">Marketing</p>
@@ -233,7 +253,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="card-content">
                 <h3 class="team-member">Daniel Wilson</h3>
                 <p class="team-role">UI Designer</p>
@@ -283,6 +308,10 @@
                 <div class="portfolio-cover-wrap">
                   <img
                     src="./images/portfolio-1.jpg"
+                    srcset="
+                      ./images/portfolio-1.jpg    1x,
+                      ./images/portfolio-1@2x.jpg 2x
+                    "
                     alt="Banking App"
                     width="360"
                     height="300"
@@ -304,6 +333,10 @@
                 <div class="portfolio-cover-wrap">
                   <img
                     src="./images/portfolio-2.jpg"
+                    srcset="
+                      ./images/portfolio-2.jpg    1x,
+                      ./images/portfolio-2@2x.jpg 2x
+                    "
                     alt="Cashless Payment"
                     width="360"
                     height="300"
@@ -325,6 +358,10 @@
                 <div class="portfolio-cover-wrap">
                   <img
                     src="./images/portfolio-3.jpg"
+                    srcset="
+                      ./images/portfolio-3.jpg    1x,
+                      ./images/portfolio-3@2x.jpg 2x
+                    "
                     alt="Meditation App"
                     width="360"
                     height="300"
@@ -346,6 +383,10 @@
                 <div class="portfolio-cover-wrap">
                   <img
                     src="./images/portfolio-4.jpg"
+                    srcset="
+                      ./images/portfolio-4.jpg    1x,
+                      ./images/portfolio-4@2x.jpg 2x
+                    "
                     alt="Taxi Service"
                     width="360"
                     height="300"
@@ -367,6 +408,10 @@
                 <div class="portfolio-cover-wrap">
                   <img
                     src="./images/portfolio-5.jpg"
+                    srcset="
+                      ./images/portfolio-5.jpg    1x,
+                      ./images/portfolio-5@2x.jpg 2x
+                    "
                     alt="Screen Illustrations"
                     width="360"
                     height="300"
@@ -388,6 +433,10 @@
                 <div class="portfolio-cover-wrap">
                   <img
                     src="./images/portfolio-6.jpg"
+                    srcset="
+                      ./images/portfolio-6.jpg    1x,
+                      ./images/portfolio-6@2x.jpg 2x
+                    "
                     alt="Online Courses"
                     width="360"
                     height="300"
@@ -421,7 +470,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <p class="footer-social-text">Social media</p>
+          <p class="footer-social-title">Social media</p>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a href="#modal" class="footer-social-link" data-modal-open>
@@ -454,7 +503,7 @@
           </ul>
         </div>
         <div class="footer-subscribe">
-          <p class="footer-subscribe-title">Subscribe</p>
+          <p class="footer-form-title">Subscribe</p>
           <form class="footer-form">
             <label class="footer-label">
               <input
@@ -574,6 +623,7 @@
         <nav>Navigation</nav>
         <address>Address</address>
         <div>Social media</div>
+      </div>
     </div>
   </body>
 </html>
