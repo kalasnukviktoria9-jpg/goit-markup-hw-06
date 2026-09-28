@@ -33,13 +33,31 @@
 
   .site-nav,
   .header-address {
-    display: flex;
+    display: none;
   }
 
   .header-address-list {
     display: flex;
     flex-direction: column;
     gap: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav,
+  .header-address {
+    display: block;
+  }
+
+  .site-nav-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 }
 

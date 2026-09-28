@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.hide {
-  display: none !important;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -68,7 +64,7 @@ a {
 }
 
 .container {
-  min-width: 320px;
+  width: 100%;
   max-width: 320px;
   padding-left: 16px;
   padding-right: 16px;
