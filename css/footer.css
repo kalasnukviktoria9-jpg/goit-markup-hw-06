@@ -94,7 +94,6 @@
     align-items: baseline;
     column-gap: 24px;
     row-gap: 72px;
-    padding-left: 108px;
   }
 
   .footer-social-title,
@@ -127,7 +126,6 @@
   .footer-container {
     flex-wrap: nowrap;
     gap: 0;
-    padding-left: 15px;
   }
 
   .footer-info {
